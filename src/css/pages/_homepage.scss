@@ -1,0 +1,123 @@
+.hero-container {
+    background: #4568dc; /* fallback for old browsers */
+    background-image: linear-gradient(
+        105deg,
+        hsl(188, 44%, 47%) 0%,
+        hsl(194deg 49% 50%) 4%,
+        hsl(200deg 53% 53%) 11%,
+        hsl(205deg 57% 56%) 20%,
+        hsl(211deg 61% 59%) 32%,
+        hsl(217deg 66% 62%) 46%,
+        hsl(222deg 70% 66%) 63%,
+        hsl(228deg 74% 68%) 79%,
+        hsl(234deg 79% 72%) 93%,
+        hsl(239, 83%, 75%) 100%
+    );
+}
+.hero {
+    & h1 {
+        padding-top: 4rem;
+    }
+    & .wrapper {
+        padding-bottom: 8rem;
+        width: 80%;
+        max-width: 1040px;
+        & p {
+            padding: 3rem 0;
+            color: $smooth-black-darker;
+        }
+        & > div {
+            display: flex;
+            justify-content: flex-end;
+            gap: 2rem;
+        }
+    }
+}
+.about {
+    & .brands {
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+        padding: 2.5rem 0 8rem 0;
+        & img {
+            max-height: 100px;
+        }
+    }
+}
+.explain,
+.about,
+.transformation,
+.cta {
+    & .wrapper {
+        text-align: center;
+        & p {
+            padding: 0 50px;
+        }
+    }
+}
+.explain {
+    padding: 5rem 0;
+}
+
+.steps {
+    & .step {
+        display: flex;
+        align-items: center;
+        gap: 10rem;
+        margin-bottom: 6rem;
+        opacity: 1;
+        max-width: 80%;
+        margin: 0 auto;
+        & .img {
+            width: 40%;
+            & img {
+                max-width: 100%;
+            }
+        }
+        & .text {
+            width: 60%;
+            & .subtitle {
+                color: $brand-color-2;
+                margin: 0;
+            }
+            & h3 {
+                margin-top: 0;
+                font-size: 3.25rem;
+            }
+            & p.goal {
+                margin-top: 2.5rem;
+                // background-color: #fdf4dc;
+                // border: 2px solid #f7e4c2;
+                padding: 0.5rem;
+                border-radius: 7px;
+                opacity: 0;
+                transform: translate(60px, 0px);
+            }
+        }
+        &:nth-child(even) {
+            margin: 15rem auto;
+            & p.goal {
+                transform: translate(-60px, 0px);
+            }
+        }
+    }
+}
+
+.transformation {
+    padding-top: 8rem;
+}
+.cta {
+    & h2 {
+        & span {
+            color: #5e17eb;
+            font-family: inherit;
+        }
+    }
+    & button {
+        display: block;
+        margin: 1.25rem auto;
+    }
+}

@@ -1,0 +1,228 @@
+body {
+    background-color: white;
+}
+.container {
+    min-height: 50vh;
+}
+.content {
+    overflow: hidden;
+}
+h1 {
+    color: $smooth-white;
+    font-weight: bold;
+    font-size: clamp(1.5rem, 0.8rem + 3.3333vw, 4.5rem);
+    line-height: 94.7%;
+    font-family: "Raleway", sans-serif;
+    text-wrap: balance;
+    text-align: center;
+}
+h2 {
+    color: $smooth-black;
+    font-size: clamp(1rem, 0.6rem + 3.3333vw, 4.5rem);
+    line-height: 0.95;
+    font-weight: 900;
+    font-family: "Raleway", sans-serif;
+    text-wrap: balance;
+    opacity: 0;
+    letter-spacing: 0.2rem;
+    &.subtitle {
+        margin-bottom: 0.5rem;
+    }
+    &.fancy {
+        background-image: linear-gradient(
+            90deg,
+            $brand-color-1,
+            $brand-color-2
+        );
+        background-clip: text;
+        color: transparent;
+    }
+    &.tiny-title {
+        font-size: clamp(1rem, 0.6rem + 3.3333vw, 3rem);
+        font-weight: 600;
+        & span {
+            color: $brand-color-2;
+        }
+    }
+}
+h3 {
+    font-size: 2rem;
+    color: $smooth-black;
+    line-height: 0.95;
+    font-family: "Raleway", sans-serif;
+}
+p {
+    color: $smooth-black;
+    font-size: 1.3rem;
+    line-height: 1.825rem;
+    letter-spacing: 0.05em;
+    font-family: "Raleway", sans-serif;
+}
+li {
+    font-family: "Montserrat", sans-serif;
+    margin-top: 1.5rem;
+}
+a {
+    color: $smooth-black;
+    text-decoration: none;
+    font-family: inherit;
+}
+p img.emoji {
+    height: 1.4rem !important;
+    width: auto !important;
+}
+.grayed {
+    color: $subtle-text;
+}
+.balanced {
+    text-wrap: balance;
+}
+::selection {
+    background-color: #d5a412;
+    color: $smooth-black;
+}
+.center {
+    text-align: center;
+}
+section {
+    width: 100%;
+    & + section {
+        margin-top: 7rem !important;
+    }
+    &.spaced {
+        padding-top: 5rem;
+    }
+}
+.wrapper {
+    width: 1140px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+.text-fancy {
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: bold;
+}
+.text-fancy-bg-gradient {
+    background-image: linear-gradient(90deg, $brand-color-1, $brand-color-2);
+    background-clip: text;
+    color: transparent;
+    font-family: "Raleway", sans-serif;
+}
+.text-fancy-underline {
+    background-image: linear-gradient(90deg, #f2b90f, #d36805);
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+.emoji {
+    font-size: 3rem;
+}
+// FORMS
+// FORMS
+// FORMS
+form {
+    & .input-container {
+        position: relative;
+        overflow: hidden;
+        & .border {
+            position: absolute;
+            left: 0;
+            bottom: 1.2rem;
+            width: 300%;
+            height: 50%;
+            background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxMjAwIDYwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iMi4yIiBkPSJtIDAsNTYuMzc2NTI1IGMgMCwwIDI5OC42NjYsMCAzOTkuMzMzLDAgNDkuMDAzLDAgMTE0LjY2MSwtMTMuMjUzMDUgMTk3LjY2NywtMTMuMjUzMDUgNzcuMzI3LDAgMTM1LDEzLjI1MzA1IDIwMC45OTksMTMuMjUzMDUgOTUuOTk2LDAgNDAyLjAwMSwwIDQwMi4wMDEsMCIvPjwvc3ZnPg==);
+            z-index: -1;
+            opacity: 0.5;
+            transform: translateX(-66.6%);
+            transition: opacity 0.4s,
+                transform 0s cubic-bezier(0.18, 0.56, 0.51, 0.85);
+        }
+        & input:focus ~ .border,
+        & textarea:focus ~ .border {
+            opacity: 1;
+            transform: translateX(0);
+            transition-duration: 0.8s, 0.8s;
+        }
+        & span.wpcf7-form-control-wrap {
+            position: unset;
+        }
+    }
+    & input,
+    textarea {
+        border: none;
+        width: 100%;
+        background-color: transparent;
+        margin: 0rem auto 1.5rem auto;
+    }
+    & input:focus,
+    textarea:focus {
+        outline: none;
+    }
+    & .codedropz-upload-wrapper {
+        width: 100% !important;
+    }
+    & > p {
+        text-align: center;
+        display: grid;
+        font-size: 1.5rem;
+        color: $smooth-black;
+    }
+    & input.wpcf7-submit {
+        display: block;
+        width: fit-content;
+        border: none;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    & h3 {
+        font-size: 1.3rem !important;
+        font-weight: normal;
+        color: $smooth-black;
+    }
+    & a {
+        font-weight: bold;
+    }
+}
+// FORM INVALID NOTIFICATIONS
+.wpcf7-response-output {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+textarea ~ .wpcf7-not-valid-tip {
+    top: 7rem;
+}
+.wpcf7-not-valid-tip {
+    position: absolute;
+    z-index: -1;
+    font-size: 0.8rem !important;
+    top: 3.5rem;
+    left: 0;
+}
+// BUTTON
+// BUTTON
+// BUTTON
+button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    background-color: transparent;
+    border: 0px;
+    outline: 2px solid $smooth-black;
+    position: relative;
+    overflow: hidden;
+    padding: 0.7rem 1.25rem;
+    margin: 0;
+    cursor: pointer;
+    &.dark {
+        background-color: $smooth-black;
+        color: $smooth-white;
+    }
+    &.light {
+        background-color: $smooth-white;
+        color: $smooth-black;
+    }
+}
+// FIN BUTTON
+// FIN BUTTON
+// FIN BUTTON

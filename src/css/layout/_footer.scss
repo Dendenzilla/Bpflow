@@ -1,0 +1,15 @@
+.footer {
+    margin-top: 5rem;
+    &__text {
+        display: flex;
+        justify-content: space-between;
+        & p {
+            color: #c0bcbc;
+            font-size: 0.8rem;
+
+            & a {
+                color: inherit;
+            }
+        }
+    }
+}
