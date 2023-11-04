@@ -1,4 +1,6 @@
+//=============================================================================
 // LENIS SMOOTH SCROLL
+//=============================================================================
 const lenis = new Lenis({
     duration: 1.2,
     easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
@@ -35,8 +37,10 @@ lenis.on(
                 });
         });
     });
-// END LENIS SMOOTH SCROLL
-// END LENIS SMOOTH SCROLL
+//=============================================================================
+// GSAP ELEMENT ANIMS
+//=============================================================================
+// we put every H2 in an array then create a gsap animation for each element
 const titles = gsap.utils.toArray("h2");
 titles.forEach((t) => {
     gsap.to(t, {
@@ -55,5 +59,37 @@ stepsAnim.forEach((t, e) => {
         duration: 0.625,
         x: 0,
         opacity: 1,
+    });
+});
+
+// TEXT FANCY UNDERLINE BACKGROUND-SIZE
+const fancyUnderline = gsap.utils.toArray(".text-fancy-underline");
+
+fancyUnderline.forEach((underlinedText, i) => {
+    gsap.to(underlinedText, {
+        delay: 0.5 * i,
+        backgroundSize: "100% 3px",
+        scrollTrigger: {
+            trigger: underlinedText,
+            start: "-100 center",
+        },
+        duration: 1,
+    });
+});
+
+// PROCESS STEPS NUMBER REVEAL
+const processNumbers = gsap.utils.toArray(".point");
+
+processNumbers.forEach((processNumber, i) => {
+    gsap.to(processNumber, {
+        delay: 0.2 * i,
+        scrollTrigger: {
+            trigger: processNumber,
+            start: "center bottom",
+        },
+        duration: 0.1,
+        onComplete: function () {
+            $(processNumber).addClass("visible");
+        },
     });
 });

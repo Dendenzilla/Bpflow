@@ -4,19 +4,48 @@ Template Name: Front page
 */
 get_header(); ?>
 <section class="hero">
-    <h1>On organise vos processus pour vous faire gagner du temps.</h1>
+
     <div class="wrapper">
-        <p>On accompagne les PMEs à chaque etape de leur croissance. Comment?
-            Grâce à des plans d'amélioration personnalisés, menés par les meilleurs experts en transformation de
-            processus opérationnels et digitaux.</p>
-        <div>
+        <h1>Votre entreprise a le nez dans le guidon?</h1>
+        <h2>Gagnez du temps en organisant vos processus.</h2>
+        <!-- <div>
             <button class="dark">Voir la méthode</button>
             <button class="light">J'ai besoin d'aide</button>
-        </div>
+        </div> -->
+    </div>
+    <div class="hero__img">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/hourglass.png" alt="" class="hourglass">
     </div>
 </section>
 </div>
 <!-- FIN WRAPPER HEADER + HERO -->
+<section class="video">
+    <iframe src="https://www.youtube.com/embed/5mLadtz2Vm0?si=PY6AEvp8hOOlNdS7" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+</section>
+<section class="quick-win">
+    <div class="wrapper">
+        <span>
+            <h2 class="fancy">L’OFFRE “QUICK-WIN” POUR les PMEs EN CROISSANCE !</h2>
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/rocket.png" alt="" class="hourglass">
+        </span>
+        <div class="cartoon">
+            <div class="cartoon__bubbles">
+                <p>Vos soucis d’organisation vous coutent du temps et de l’argent?</p>
+                <p>Aucune entreprise ne devrait souffrir d’un manque d’organisation.</br>
+                    La méthodologie Lean Six Sigma n’est pas réservée qu’aux grosses boites.</p>
+                <p>Optimisez vos Processus et Boostez vos Résultats avec nos Améliorations Stratégique</p>
+            </div>
+            <div class="cartoon__speaker">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ced.png" alt=""
+                    class="BPFlow CEO Cedric Marien">
+            </div>
+        </div>
+
+    </div>
+</section>
 <section class="about spaced">
     <p class="center"><b>Nos partenaires et clients nous font confiance:</b></p>
     <div class="brands">
@@ -122,6 +151,40 @@ get_header(); ?>
         <p>Ensemble, tout est possible !</p>
         <button>Prendre un RDV</button>
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/possible.webp" alt="">
+    </div>
+</section>
+
+<section class="flow">
+    <div class="wrapper">
+        <h2 class="center subtitle">A better process flow for your company</h2>
+        <p class="center">Let's redesign your operational/digital activities to remove non-value added work.</p>
+        <div class="points-list">
+            <div class="point" data-content="1">
+                <div data-content="1"></div>
+                <p><b>Scope definition:</b> Defining the Voice of your Customer (VoC).</br>What are your problems with
+                    the current process? (rework? poor quality? long leadtime? high cost?)
+                </p>
+            </div>
+            <div class="point" data-content="2">
+                <div data-content="2"></div>
+                <p><b>Process/data audit:</b> we measure your systems via process mapping, data analysis & statistics,
+                    identify waste/rework/bottleneck in your process and define the AS IS situation.</p>
+            </div>
+            <div class="point" data-content="3">
+                <div data-content="3"></div>
+                <p><b>Analyze the root cause</b> thanks to problem breakdown, Ishikawa diagram and 5 why’s method.
+                    Corrective/Preventive actions are then identified and prioritised.</p>
+            </div>
+            <div class="point" data-content="4">
+                <div data-content="4"></div>
+                <p><b>Improvement phase:</b> based on your priority, an improvement program is designed for the “TO BE”
+                    situation to help you deliver results with a focus on quick wins with Kaizen.</p>
+            </div>
+            <div class="point" data-content="5">
+                <div data-content="5"></div>
+                <p><b>Control your new process</b> and develop your continuous improvement culture!</p>
+            </div>
+        </div>
     </div>
 </section>
 

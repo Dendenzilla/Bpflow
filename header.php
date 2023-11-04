@@ -50,13 +50,14 @@
                 <div class="header">
                     <div class="wrapper">
                         <div>
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.webp" alt="Logo BPFlow">
-                            <a href="<?php echo home_url(); ?>">BP Flow</a>
+                            <a href="<?php echo home_url(); ?>">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo_large-cropped.png"
+                                    alt="Logo BPFlow"></a>
                         </div>
-                        <nav>
+                        <!-- <nav>
                             <a href="#">La méthode</a>
                             <a href="#">Les cas clients</a>
                             <a href="#">Médias</a>
-                        </nav>
+                        </nav> -->
                     </div>
                 </div>

@@ -1,27 +1,42 @@
 .hero-container {
-    background: #4568dc; /* fallback for old browsers */
-    background-image: linear-gradient(
-        105deg,
-        hsl(188, 44%, 47%) 0%,
-        hsl(194deg 49% 50%) 4%,
-        hsl(200deg 53% 53%) 11%,
-        hsl(205deg 57% 56%) 20%,
-        hsl(211deg 61% 59%) 32%,
-        hsl(217deg 66% 62%) 46%,
-        hsl(222deg 70% 66%) 63%,
-        hsl(228deg 74% 68%) 79%,
-        hsl(234deg 79% 72%) 93%,
-        hsl(239, 83%, 75%) 100%
-    );
+    overflow: hidden;
+    min-height: 500px;
+    --cyanHSL: 195 78% 37%;
+    --pinkHSL: 85 57% 81%;
+    background-color: #72b7ad;
+    background-image: radial-gradient(
+            circle at top right,
+            hsl(var(--cyanHSL)),
+            hsl(var(--cyanHSL) / 0%)
+        ),
+        radial-gradient(
+            circle at bottom left,
+            hsl(var(--pinkHSL)),
+            hsl(var(--pinkHSL) / 0%)
+        );
 }
+// ==================================================================
+// HERO SECTION
+// ==================================================================
 .hero {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
     & h1 {
         padding-top: 4rem;
+        font-weight: bold;
+    }
+    & h2 {
+        text-align: center;
+        font-weight: normal;
+        color: $smooth-white;
     }
     & .wrapper {
         padding-bottom: 8rem;
-        width: 80%;
-        max-width: 1040px;
+        width: 90%;
+        max-width: 1440px;
+        position: relative;
+        z-index: 99;
         & p {
             padding: 3rem 0;
             color: $smooth-black-darker;
@@ -30,6 +45,72 @@
             display: flex;
             justify-content: flex-end;
             gap: 2rem;
+        }
+    }
+    &__img {
+        .hourglass {
+            position: absolute;
+            bottom: 0px;
+            right: -140px;
+            transform: rotate(15deg) scale(1.5);
+            z-index: 9;
+            filter: blur(2px);
+        }
+    }
+}
+// ==================================================================
+// VIDEO SECTION
+// ==================================================================
+.video {
+    display: flex;
+    justify-content: center;
+    min-height: 700px;
+    align-items: center;
+    & iframe {
+        width: 700px;
+        aspect-ratio: 16/9;
+    }
+}
+// ==================================================================
+// quick-win SECTION
+// ==================================================================
+.quick-win {
+    & span {
+        position: relative;
+        & h2 {
+            text-align: center;
+            transform: translateY(35px);
+        }
+        & img {
+            position: absolute;
+            bottom: -30px;
+            right: 30px;
+            max-height: 150px;
+            transform: rotateZ(43deg) scale(1.5);
+        }
+    }
+    & .cartoon {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        &__bubbles {
+            width: 70%;
+            & p:first-of-type {
+                width: 80%;
+                margin-left: auto;
+                font-size: 1rem;
+            }
+            & p:nth-child(2) {
+                font-weight: bold;
+            }
+            & p:last-of-type {
+            }
+        }
+        &__speaker {
+            width: 30%;
+            & img {
+                max-width: 150px;
+            }
         }
     }
 }
@@ -119,5 +200,76 @@
     & button {
         display: block;
         margin: 1.25rem auto;
+    }
+}
+
+// FLOW SECTION
+// FLOW SECTION
+// FLOW SECTION
+.points-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem auto;
+    width: calc(
+        var(--main-width) -
+            (2 * (var(--main-grid-column) + var(--main-grid-gap)))
+    );
+    margin: 4rem auto;
+    & .point {
+        position: relative;
+        padding: 1rem 1rem 1rem 2.5rem;
+        background-color: var(--page-background-color);
+        border-radius: var(--border-radius);
+        box-shadow: 0.2px 0.2px 2.5px rgba(0, 0, 0, 0.011),
+            0.6px 0.6px 6.1px rgba(0, 0, 0, 0.016),
+            1.1px 1.1px 11.4px rgba(0, 0, 0, 0.02),
+            2px 2px 20.3px rgba(0, 0, 0, 0.024),
+            3.8px 3.8px 38px rgba(0, 0, 0, 0.029),
+            9px 9px 91px rgba(0, 0, 0, 0.04);
+        &::before {
+            content: attr(data-content);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 4rem;
+            font-weight: 900;
+            position: absolute;
+            rotate: 11.69deg;
+            top: -2.5rem;
+            left: -2.5rem;
+            opacity: 0;
+            z-index: -1;
+            color: var(--main-color-strong);
+            transition: all 0.5s ease;
+        }
+        &.visible::before {
+            left: -1rem;
+            opacity: 1;
+        }
+        & div {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            filter: blur(2px);
+            &::before {
+                content: attr(data-content);
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 4rem;
+                font-weight: 900;
+                position: absolute;
+                rotate: 11.69deg;
+                top: -2.5rem;
+                left: -2.5rem;
+                opacity: 0;
+                transition: all 0.5s ease;
+                color: var(--main-color-strong);
+            }
+        }
+        &.visible div::before {
+            left: -1rem;
+            opacity: 1;
+        }
     }
 }
