@@ -36,7 +36,7 @@ get_header(); ?>
                 <p>Vos soucis d’organisation vous coutent du temps et de l’argent?</p>
                 <p>Aucune entreprise ne devrait souffrir d’un manque d’organisation.</br>
                     La méthodologie Lean Six Sigma n’est pas réservée qu’aux grosses boites.</p>
-                <p>Optimisez vos Processus et Boostez vos Résultats avec nos Améliorations Stratégique</p>
+                <p>Optimisez vos Processus et Boostez vos Résultats avec nos Améliorations Stratégique !</p>
             </div>
             <div class="cartoon__speaker">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ced.png" alt=""
