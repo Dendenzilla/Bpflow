@@ -43,21 +43,19 @@
 </head>
 
 <body>
+    <div class="header">
+        <div class="wrapper">
+            <div>
+                <a href="<?php echo home_url(); ?>">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo_large-cropped.png"
+                        alt="Logo BPFlow"></a>
+            </div>
+            <nav>
+                <a href="#" class="text-fancy-bg-gradient">Dépassez vos attentes</a>
+            </nav>
+        </div>
+    </div>
     <!-- DEBUT MAIN CONT -->
     <div class="container">
         <div class="content">
             <div class="hero-container">
-                <div class="header">
-                    <div class="wrapper">
-                        <div>
-                            <a href="<?php echo home_url(); ?>">
-                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo_large-cropped.png"
-                                    alt="Logo BPFlow"></a>
-                        </div>
-                        <!-- <nav>
-                            <a href="#">La méthode</a>
-                            <a href="#">Les cas clients</a>
-                            <a href="#">Médias</a>
-                        </nav> -->
-                    </div>
-                </div>

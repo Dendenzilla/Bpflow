@@ -25,6 +25,24 @@ get_header(); ?>
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen></iframe>
 </section>
+<section class="path">
+    <div class="wrapper">
+        <p>Toute entreprise en croissance voit ses processus se complexifier.</p>
+        <p>N’attendez pas que la situation devienne critique pour vous faire accompagner</p>
+        <p>Notre approche est simple, les résultats sont rapides et rentables grâce à nos outils innovants.</p>
+    </div>
+</section>
+<section>
+    <div class="wrapper">
+        <h3>BP Flow c’est 3,2 M€ d’économies identifiées dans des grands groupes.<br>Maintenant, nous accompagnons les
+            PMEs.</h3>
+        <ul>
+            <li>Devenez scandaleusement efficaces.</li>
+            <li>Réduisez le stress qui pèse sur vos équipes.</li>
+            <li>Et dépassez les attentes de vos clients</li>
+        </ul>
+    </div>
+</section>
 <section class="quick-win">
     <div class="wrapper">
         <span>
@@ -43,10 +61,9 @@ get_header(); ?>
                     class="BPFlow CEO Cedric Marien">
             </div>
         </div>
-
     </div>
 </section>
-<section class="about spaced">
+<!-- <section class="about spaced">
     <p class="center"><b>Nos partenaires et clients nous font confiance:</b></p>
     <div class="brands">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ucb.webp" alt=""><img
@@ -68,19 +85,19 @@ get_header(); ?>
             une approche quick-win facile à implémenter.
         </p>
     </div>
-</section>
-<section class="explain">
+</section> -->
+<section class="path">
     <div class="wrapper">
-        <h2 class="tiny-title">Comment <span>ça marche?</span></h2>
-        <p>Dans un monde où l'on ne peut pas compter sur la chance, seule la méthode prime.</p>
-        <p>Alors, <b>nous avons rassemblé plusieurs méthodologies de management de la performance</b>
-            afin de changer rapidement vos processus et gagner en efficacité.</p>
-        <p>L’objectif ? Vous former à la logique de ces méthodologies de gestion afin de développer votre entreprise.
-        </p>
+        <a href="<?php echo get_page_link(9) ?>" class="brand-button">Découvrez notre Offre pour les PMEs B2B</a>
     </div>
 </section>
-
-<section class="steps spaced">
+<section class="offer">
+    <div class="wrapper">
+        <h2>OFFRE LIMITEE à 3330 euros - 5 places encore disponibles avant le Jeudi 30 novembre. </h2>
+        <p>offre + desc + bonus</p>
+    </div>
+</section>
+<!-- <section class="steps spaced">
     <div class="step">
         <div class="img">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/step1.webp" alt="">
@@ -130,9 +147,9 @@ get_header(); ?>
             </p>
         </div>
     </div>
-</section>
+</section> -->
 
-<section class="transformation">
+<!-- <section class="transformation">
     <div class="wrapper">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/t.webp" alt="">
         <h2>Transformation <span>et Performance</span></h2>
@@ -143,9 +160,9 @@ get_header(); ?>
             la développer
             dans les meilleures conditions possible.</p>
     </div>
-</section>
+</section> -->
 
-<section class="cta">
+<!-- <section class="cta">
     <div class="wrapper">
         <h2>Confiez nous votre</br><span>croissance</span></h2>
         <p>Ensemble, tout est possible !</p>
@@ -186,6 +203,6 @@ get_header(); ?>
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 <?php get_footer(); ?>

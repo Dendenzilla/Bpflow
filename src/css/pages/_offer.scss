@@ -1,0 +1,9 @@
+.hero.offer {
+    & h1 {
+        font-size: 3rem;
+    }
+    & p {
+        color: $smooth-white;
+        text-align: center;
+    }
+}

@@ -62,7 +62,10 @@ stepsAnim.forEach((t, e) => {
     });
 });
 
+//=============================================================================
 // TEXT FANCY UNDERLINE BACKGROUND-SIZE
+//=============================================================================
+
 const fancyUnderline = gsap.utils.toArray(".text-fancy-underline");
 
 fancyUnderline.forEach((underlinedText, i) => {
@@ -77,7 +80,10 @@ fancyUnderline.forEach((underlinedText, i) => {
     });
 });
 
+//=============================================================================
 // PROCESS STEPS NUMBER REVEAL
+//=============================================================================
+
 const processNumbers = gsap.utils.toArray(".point");
 
 processNumbers.forEach((processNumber, i) => {
@@ -93,3 +99,27 @@ processNumbers.forEach((processNumber, i) => {
         },
     });
 });
+
+//=============================================================================
+// GSAP HEADER REVEAL BASED ON SCROLL UP
+//=============================================================================
+
+const showAnim = gsap
+    .from(".header", {
+        yPercent: -100,
+        paused: true,
+        duration: 0.2,
+    })
+    .progress(1);
+
+ScrollTrigger.create({
+    start: "top top",
+    end: 99999,
+    onUpdate: (self) => {
+        self.direction === -1 ? showAnim.play() : showAnim.reverse();
+    },
+});
+
+//=============================================================================
+//
+//=============================================================================
