@@ -20,8 +20,7 @@ get_header(); ?>
 </div>
 <!-- FIN WRAPPER HEADER + HERO -->
 <section class="video">
-    <iframe src="https://www.youtube.com/embed/VzfeI6Me9EM?si=Gpql9ne-pn1fKhmp" title="YouTube video player"
-        frameborder="0"
+    <iframe src="https://www.youtube.com/embed/VzfeI6Me9EM?&autoplay=1" title="YouTube video player" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen></iframe>
 </section>
@@ -45,7 +44,7 @@ get_header(); ?>
                     </svg></span>, les résultats sont rapides et rentables grâce à nos outils innovants.</p>
         </div>
         <h3><span class="text-fancy-bg-gradient">BP Flow</span> <span class="text-svg">c'est 3,2 M€
-                d’économies <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -22 259 52" fill="none"
+                d’économies <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -27 259 52" fill="none"
                     preserveAspectRatio="none">
                     <path class="svgtodraw" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M 0 1 c 0 0 16 5 76 1 c 27 -2 44 -5 44 -18 c 0 -11 -8 -15 -36 -12 c -32 3 -35 16 -31 24 c 6 14 34 9 51 8 c 25 -2 26 -4 53 -5 c 28 -1 37 -1 76 3">
@@ -54,9 +53,9 @@ get_header(); ?>
             groupes.<br>Maintenant, nous accompagnons les
             PMEs.</h3>
         <ul>
-            <li>Devenez <b>scandaleusement efficaces</b>.</li>
-            <li><b>Réduisez le stress</b> qui pèse sur vos équipes.</li>
-            <li>Et <b>dépassez les attentes</b> de vos clients</li>
+            <li data-icon="📈">Devenez <b>scandaleusement efficaces</b>.</li>
+            <li data-icon="😊"><b>Réduisez le stress</b> qui pèse sur vos équipes.</li>
+            <li data-icon="💯">Et <b>dépassez les attentes</b> de vos clients</li>
         </ul>
     </div>
 </section>
@@ -64,12 +63,13 @@ get_header(); ?>
     <div class="quote__block">
         <blockquote>Aucune entreprise ne devrait souffrir d’un manque d’organisation.<br>
             La méthodologie <i>Lean Six Sigma</i> n’est pas réservée qu’aux grosses boites.
-            <p>— Cédric Marien - CEO @ BP Flow <a
-                    href="https://www.linkedin.com/in/bpflow-cedricmarien/?originalSubdomain=be" target="_blank"><img
-                        src="<?php echo get_stylesheet_directory_uri(); ?>/img/linkedin-fill.png"
-                        alt="Link linkedin BPFlow"></a> </p>
-            <p>Docteur en Chimie Certifié Lean Six Sigma</p>
+
         </blockquote>
+        <p>— Cédric Marien - CEO @ BP Flow <a
+                href="https://www.linkedin.com/in/bpflow-cedricmarien/?originalSubdomain=be" target="_blank"><img
+                    src="<?php echo get_stylesheet_directory_uri(); ?>/img/linkedin-fill.png"
+                    alt="Link linkedin BPFlow"></a> </p>
+        <p>Docteur en Chimie Certifié Lean Six Sigma</p>
     </div>
 </section>
 <section class="path">
@@ -80,10 +80,6 @@ get_header(); ?>
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow.png" alt="Logo BPFlow">
         <div class="step">
             <p>Vente</p>
-        </div>
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow.png" alt="Logo BPFlow">
-        <div class="step">
-            <p>Gestion administrative</p>
         </div>
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow.png" alt="Logo BPFlow">
         <div class="step">
