@@ -20,81 +20,80 @@ get_header(); ?>
 </div>
 <!-- FIN WRAPPER HEADER + HERO -->
 <section class="video">
-    <iframe src="https://www.youtube.com/embed/5mLadtz2Vm0?si=PY6AEvp8hOOlNdS7" title="YouTube video player"
+    <iframe src="https://www.youtube.com/embed/VzfeI6Me9EM?si=Gpql9ne-pn1fKhmp" title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen></iframe>
 </section>
 <section class="path">
     <div class="wrapper">
-        <p>Toute entreprise en croissance voit ses processus se complexifier.</p>
-        <p>N’attendez pas que la situation devienne critique pour vous faire accompagner</p>
-        <p>Notre approche est simple, les résultats sont rapides et rentables grâce à nos outils innovants.</p>
-    </div>
-</section>
-<section>
-    <div class="wrapper">
-        <h3>BP Flow c’est 3,2 M€ d’économies identifiées dans des grands groupes.<br>Maintenant, nous accompagnons les
+        <div class="path__incentive">
+            <p>Toute entreprise en croissance voit ses processus se complexifier.<img
+                    src="<?php echo get_stylesheet_directory_uri(); ?>/img/complexity.png" alt="Icon complexity"></p>
+            <p>N’attendez pas que la situation devienne <span class="text-svg"><b>critique</b> <svg
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 117 7" fill="none" preserveAspectRatio="none"
+                        class="svg-underline red">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 2l4.935 1.763c1.261.45 2.669.133 3.615-.813v0a3.464 3.464 0 014.9 0l.8.8a4.596 4.596 0 006.5 0v0a4.596 4.596 0 016.5 0l.75.75a3.536 3.536 0 005 0v0a3.536 3.536 0 015 0v0a3.536 3.536 0 005 0v0a3.536 3.536 0 015 0v0a3.536 3.536 0 005 0v0a3.536 3.536 0 015 0v0a3.536 3.536 0 005 0v0a3.536 3.536 0 015 0v0a3.536 3.536 0 005 0v0a3.536 3.536 0 015 0v0a3.536 3.536 0 005 0l.285-.285a3.938 3.938 0 014.872-.555l1.988 1.243A6.885 6.885 0 0098 5.157l2.454-1.291a11.712 11.712 0 017.49-1.17l4.555.804">
+                        </path>
+                    </svg></span> pour vous faire accompagner</p>
+            <p>Notre approche est <span class="text-svg"><b>simple</b> <svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 42 5" fill="none" preserveAspectRatio="none" class="svg-underline orange">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 3.50019C8.5 5.00012 16.5 2.50026 29 2.00019C41.5 1.50012 40 3.50019 40 3.50019">
+                        </path>
+                    </svg></span>, les résultats sont rapides et rentables grâce à nos outils innovants.</p>
+        </div>
+        <h3><span class="text-fancy-bg-gradient">BP Flow</span> <span class="text-svg">c'est 3,2 M€
+                d’économies <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -22 259 52" fill="none"
+                    preserveAspectRatio="none">
+                    <path class="svgtodraw" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M 0 1 c 0 0 16 5 76 1 c 27 -2 44 -5 44 -18 c 0 -11 -8 -15 -36 -12 c -32 3 -35 16 -31 24 c 6 14 34 9 51 8 c 25 -2 26 -4 53 -5 c 28 -1 37 -1 76 3">
+                    </path>
+                </svg></span> identifiées dans des grands
+            groupes.<br>Maintenant, nous accompagnons les
             PMEs.</h3>
         <ul>
-            <li>Devenez scandaleusement efficaces.</li>
-            <li>Réduisez le stress qui pèse sur vos équipes.</li>
-            <li>Et dépassez les attentes de vos clients</li>
+            <li>Devenez <b>scandaleusement efficaces</b>.</li>
+            <li><b>Réduisez le stress</b> qui pèse sur vos équipes.</li>
+            <li>Et <b>dépassez les attentes</b> de vos clients</li>
         </ul>
     </div>
 </section>
-<section class="quick-win">
-    <div class="wrapper">
-        <span>
-            <h2 class="fancy">L’OFFRE “QUICK-WIN” POUR les PMEs EN CROISSANCE !</h2>
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/rocket.png" alt="" class="hourglass">
-        </span>
-        <div class="cartoon">
-            <div class="cartoon__bubbles">
-                <p>Vos soucis d’organisation vous coutent du temps et de l’argent?</p>
-                <p>Aucune entreprise ne devrait souffrir d’un manque d’organisation.</br>
-                    La méthodologie Lean Six Sigma n’est pas réservée qu’aux grosses boites.</p>
-                <p>Optimisez vos Processus et Boostez vos Résultats avec nos Améliorations Stratégique !</p>
-            </div>
-            <div class="cartoon__speaker">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ced.png" alt=""
-                    class="BPFlow CEO Cedric Marien">
-            </div>
+<section class="quote">
+    <div class="quote__block">
+        <blockquote>Aucune entreprise ne devrait souffrir d’un manque d’organisation.<br>
+            La méthodologie <i>Lean Six Sigma</i> n’est pas réservée qu’aux grosses boites.
+            <p>— Cédric Marien - CEO @ BP Flow <a
+                    href="https://www.linkedin.com/in/bpflow-cedricmarien/?originalSubdomain=be" target="_blank"><img
+                        src="<?php echo get_stylesheet_directory_uri(); ?>/img/linkedin-fill.png"
+                        alt="Link linkedin BPFlow"></a> </p>
+            <p>Docteur en Chimie Certifié Lean Six Sigma</p>
+        </blockquote>
+    </div>
+</section>
+<section class="path">
+    <div class="path__steps">
+        <div class="step">
+            <p>Marketing</p>
+        </div>
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow.png" alt="Logo BPFlow">
+        <div class="step">
+            <p>Vente</p>
+        </div>
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow.png" alt="Logo BPFlow">
+        <div class="step">
+            <p>Gestion administrative</p>
+        </div>
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow.png" alt="Logo BPFlow">
+        <div class="step">
+            <p>Gestion des opérations</p>
         </div>
     </div>
-</section>
-<!-- <section class="about spaced">
-    <p class="center"><b>Nos partenaires et clients nous font confiance:</b></p>
-    <div class="brands">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ucb.webp" alt=""><img
-            src="<?php echo get_stylesheet_directory_uri(); ?>/img/proximus.webp" alt=""><img
-            src="<?php echo get_stylesheet_directory_uri(); ?>/img/belram.webp" alt=""><img
-            src="<?php echo get_stylesheet_directory_uri(); ?>/img/hive.webp" alt=""><img
-            src="<?php echo get_stylesheet_directory_uri(); ?>/img/strand.webp" alt="">
-    </div>
-    <div class="wrapper center">
-        <h2>Offrez à votre entreprise les <span class="text-fancy-bg-gradient">processus</span> qu'elle mérite.</h2>
-        <p class="balanced">Notre objectif est d'aider votre entreprise à implémenter une culture d'amélioration
-            continue basée sur les
-            processus.</p>
-        <p><b>Cette approche doit se comprendre, se tester, et surtout :
-                s’internaliser.</b></p>
-        <p class="balanced">En offrant un suivi méticuleux, nous maximisons vos chances d'atteindre vos objectifs et de
-            devenir autonomes
-            via
-            une approche quick-win facile à implémenter.
-        </p>
-    </div>
-</section> -->
-<section class="path">
-    <div class="wrapper">
+    <div class="cta">
+        <p>Simplifiez la vie de vos clients/collaborateurs avec des processus simples.</p>
         <a href="<?php echo get_page_link(9) ?>" class="brand-button">Découvrez notre Offre pour les PMEs B2B</a>
     </div>
-</section>
-<section class="offer">
-    <div class="wrapper">
-        <h2>OFFRE LIMITEE à 3330 euros - 5 places encore disponibles avant le Jeudi 30 novembre. </h2>
-        <p>offre + desc + bonus</p>
     </div>
 </section>
 <!-- <section class="steps spaced">
