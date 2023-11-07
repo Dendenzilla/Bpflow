@@ -70,21 +70,24 @@ get_header(); ?>
             <h3>Au programme :</h3>
             <p class="undertitle --m">plusieurs sessions workshop à étaler sur 1 mois</p>
             <div class="wrkshp">
-                <p style="background-color: #b9dcb1;">1er workshop (4h)</p>
-                <p>Nous analysons votre entreprise en cartographiant les processus suivants avec vos experts: Marketing
+                <p>1er workshop (4h)</p>
+                <p>Nous analysons votre entreprise en cartographiant les processus suivants avec vos experts:</p>
+                <p class="balanced"> Marketing
                     → Vente → Opérations</p>
             </div>
             <div class="wrkshp">
-                <p style="background-color: #56a6ac;">2e workshop (4h)</p>
+                <p>2e workshop (4h)</p>
                 <p>Nous identifions les inefficacités opérationnelles et points de friction avec votre équipe et nous
                     organisons une session de résolution de problèmes</p>
             </div>
             <div class="wrkshp">
-                <p style="background-color: #1c88a9;">3e workshop (3h)</p>
-                <p>Nous mettons en place d’une stratégie d'amélioration Quick-win adaptée à vos priorités afin de mettre
+                <p>3e workshop (3h)</p>
+                <p>Nous mettons en place d’une <b>stratégie d'amélioration Quick-win</b> adaptée à vos priorités afin de
+                    mettre
                     en place un plan d'action simple et personnalisé.</p>
             </div>
-            <p>Nous terminons le 3e workshop par 1h de formation à Chat GPT4 pour vous aider à implémenter rapidement
+            <p>Nous terminons le 3e workshop par 1h de <b>formation à Chat GPT4</b> pour vous aider à implémenter
+                rapidement
                 vos quick wins.</p>
         </div>
     </div>

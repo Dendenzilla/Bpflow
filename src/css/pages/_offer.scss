@@ -20,7 +20,8 @@
         max-width: 500px;
         margin: 0 auto;
         margin-top: 9rem;
-        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px,
+            inset -5px -5px 10px #e09bdb, inset 5px 5px 10px #fff;
         position: relative;
         display: flex;
         flex-direction: column;
@@ -28,7 +29,7 @@
         padding: 0 1.125rem;
         // background-color: $smooth-white;
         background: $smooth-white;
-        border-radius: 160px 160px 5px 5px;
+        border-radius: 160px 160px 15px 15px;
         & img {
             max-width: 300px;
             margin-top: -9rem;
@@ -38,8 +39,8 @@
             text-transform: uppercase;
             display: block;
             font-size: 92px;
-            color: $brand-color-mix;
-            text-shadow: 0 8px 9px #9eb9b7, 0px -2px 1px #fff;
+            color: #fdcd31;
+            text-shadow: 0 5px 3px #d97f1c, 0px -2px 1px #fff;
             font-weight: bold;
             letter-spacing: -4px;
             text-align: center;
@@ -93,6 +94,8 @@
                 text-align: center;
                 color: white;
                 font-weight: bold;
+                background-color: #1c88a9;
+                margin: 1.5rem 0 0.5rem;
             }
         }
     }
