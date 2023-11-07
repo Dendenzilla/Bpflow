@@ -53,10 +53,40 @@ get_header(); ?>
         </ul>
     </div>
 </section>
-<section class="offer">
+<section class="offer__cta">
     <div class="wrapper">
-        <h2>OFFRE LIMITEE à 3330 euros - 5 places encore disponibles avant le Jeudi 30 novembre. </h2>
-        <p>offre + desc + bonus</p>
+        <div class="offer__cta__desc">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/prize.png" alt=""
+                class="BPFlow CEO Cedric Marien">
+            <p class="undertitle --sm"><i>L'offre</i></p>
+            <h2>Quick Win</h2>
+            <p class="balanced spaced">OFFRE LIMITEE à<br><span>3330 euros</span><br>jusqu’au 15 novembre</p>
+            <p class="undertitle --sm">Ensuite 4550</p>
+            <p class="undertitle --m">— 3 places restantes sur 4* —</p>
+            <p class="undertitle --sm balanced">*Afin de garantir un service optimal et maximiser les résultats pour
+                chaque
+                client, nous limitons le
+                nombre de places à 4 par mois.</p>
+            <h3>Au programme :</h3>
+            <p class="undertitle --m">plusieurs sessions workshop à étaler sur 1 mois</p>
+            <div class="wrkshp">
+                <p style="background-color: #b9dcb1;">1er workshop (4h)</p>
+                <p>Nous analysons votre entreprise en cartographiant les processus suivants avec vos experts: Marketing
+                    → Vente → Opérations</p>
+            </div>
+            <div class="wrkshp">
+                <p style="background-color: #56a6ac;">2e workshop (4h)</p>
+                <p>Nous identifions les inefficacités opérationnelles et points de friction avec votre équipe et nous
+                    organisons une session de résolution de problèmes</p>
+            </div>
+            <div class="wrkshp">
+                <p style="background-color: #1c88a9;">3e workshop (3h)</p>
+                <p>Nous mettons en place d’une stratégie d'amélioration Quick-win adaptée à vos priorités afin de mettre
+                    en place un plan d'action simple et personnalisé.</p>
+            </div>
+            <p>Nous terminons le 3e workshop par 1h de formation à Chat GPT4 pour vous aider à implémenter rapidement
+                vos quick wins.</p>
+        </div>
     </div>
 </section>
 <section class="form">
