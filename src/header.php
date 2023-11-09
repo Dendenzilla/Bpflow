@@ -53,6 +53,9 @@
             <nav>
                 <a href="<?php echo get_page_link(9) ?>" class="text-fancy-bg-gradient">Dépassez vos attentes</a>
             </nav>
+            <div class="burger burger2 unToggled">
+                <div></div>
+            </div>
         </div>
     </div>
     <!-- DEBUT MAIN CONT -->

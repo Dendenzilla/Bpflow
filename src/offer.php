@@ -14,87 +14,90 @@ get_header(); ?>
 <section class="quick-win">
     <div class="wrapper">
         <span>
-            <h2 class="fancy">L’OFFRE “QUICK-WIN” POUR les PMEs EN CROISSANCE !</h2>
+            <h2>L’OFFRE <span class="text-fancy-bg-gradient">“QUICK-WIN”</span> !</h2>
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/rocket.png" alt="" class="hourglass">
         </span>
-        <div class="cartoon">
-            <div class="cartoon__bubbles">
-                <p>Vos soucis d’organisation vous coutent du temps et de l’argent?</p>
-                <p>Aucune entreprise ne devrait souffrir d’un manque d’organisation.</br>
-                    La méthodologie Lean Six Sigma n’est pas réservée qu’aux grosses boites.</p>
-                <p>Optimisez vos Processus et Boostez vos Résultats avec nos Améliorations Stratégique !</p>
-            </div>
-            <div class="cartoon__speaker">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ced.png" alt=""
-                    class="BPFlow CEO Cedric Marien">
-            </div>
+        <div>
+            <p>Vous vous sentez limités dans l’augmentation de votre chiffre d’affaire?</p>
+            <p>Vous aimeriez une meilleure maitrise de votre cycle de vente?</p>
         </div>
+        <ul>
+            <li data-icon="📈"><b>Minimisez</b> vos risques d’erreurs opérationnelles</li>
+            <li data-icon="😊">Maximisez votre ROI en éliminant vos pertes</li>
+            <li data-icon="💯">Boostez votre équipe avec des processus efficaces</li>
+        </ul>
+        <p class="balanced">Nous vous fournissons une stratégie clé en main + accompagnement de 8 semaines pour
+            développer votre
+            cycle de ventes.</p>
+        <p>En plus, nous vous familarisons à l’IA Chat GPT pour changer vos réflexes et économiser un max de temps.
+        </p>
     </div>
 </section>
 <section class="explain">
     <div class="wrapper">
-        <h2 class="tiny-title">Comment <span>ça marche?</span></h2>
-        <p>Listing des solutions</p>
-        <p>- **Résultats Éclairs** - Voyez des améliorations dès les premières semaines, avec un ROI garanti dans
-            l'année.
-            - **😌** **Sans efforts** - Une solution simple. Nous organisons tout pour vous, depuis l’animation des
-            workshops jusqu’au coaching de vos équipes.
-            - 🏆 **Approche Novatrice pour les PMEs** - Bénéficiez de la puissance de “Lean Six Sigma”, la méthodologie
-            utilisée par les grandes boites pour booster votre performance d’équipe.
-            - 🥳 **Des Équipes Revitalisées** - Décuplez la puissance de votre communication avec des outils simples
-            mais redoutables.
-            - **✨Brillez face à vos concurrents:** Devenez scandaleusement efficaces en offrant un service client
-            exemplaire.</p>
+        <h2 class="tiny-title">Notre <span class="text-fancy-bg-gradient">valeur ajoutée</span></h2>
+        <p><b>Résultats Éclairs</b></p>
+        <p>Des améliorations dès les premières semaines, avec un ROI dans l'année.</p>
+        <p><b>Prise en main complète</b></p>
+        <p>Nous organisons tout pour vous, depuis l’animation des
+            workshops jusqu’au coaching de vos équipes.</p>
+        <p><b>Approche Novatrice</b></p>
+        <p>Bénéficiez de la puissance de “Lean Six Sigma”, la méthodologie utilisée par les grandes boites pour booster
+            votre performance d’équipe.</p>
+        <p><b>Brillez face à vos concurrents</b></p>
+        <p>Devenez scandaleusement efficaces en offrant un service client exemplaire.</p>
         <h3>N’attendez plus pour recevoir du feedback positif de vos clients et de vos équipes.</h3>
-        <ul>
-            <li>Minimisez vos risques d’erreurs opérationnelles</li>
-            <li>Maximisez votre ROI en éliminant vos pertes</li>
-            <li>Boostez votre communication d’équipe grâce à des processus efficaces</li>
-        </ul>
     </div>
 </section>
 <section class="offer__cta">
     <div class="wrapper">
         <div class="offer__cta__desc">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/prize.png" alt=""
-                class="BPFlow CEO Cedric Marien">
-            <p class="undertitle --sm"><i>L'offre</i></p>
-            <h2>Quick Win</h2>
-            <p class="balanced spaced">OFFRE LIMITEE à<br><span>3330 euros</span><br>jusqu’au 15 novembre</p>
-            <p class="undertitle --sm">Ensuite 4550</p>
-            <p class="undertitle --m">— 3 places restantes sur 4* —</p>
-            <p class="undertitle --sm balanced">*Afin de garantir un service optimal et maximiser les résultats pour
-                chaque
-                client, nous limitons le
-                nombre de places à 4 par mois.</p>
-            <h3>Au programme :</h3>
-            <p class="undertitle --m">plusieurs sessions workshop à étaler sur 1 mois</p>
-            <div class="wrkshp">
-                <p>1er workshop (4h)</p>
-                <p>Nous analysons votre entreprise en cartographiant les processus suivants avec vos experts:</p>
-                <p class="balanced"> Marketing
-                    → Vente → Opérations</p>
+            <div class="balanced">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/prize.png" alt="">
+                <p class="undertitle --sm"><i>La Formule</i></p>
+                <h2>Quick Win</h2>
             </div>
-            <div class="wrkshp">
-                <p>2e workshop (4h)</p>
-                <p>Nous identifions les inefficacités opérationnelles et points de friction avec votre équipe et nous
-                    organisons une session de résolution de problèmes</p>
+            <div>
+                <h3>Au programme :</h3>
+                <p class="undertitle balanced --m">plusieurs sessions workshop à étaler sur 1 mois</p>
+                <ul>
+                    <li>1er workshop (4h) <ul>
+                            <li>Cartographie de votre processus client:</br></br>Marketing → Vente → Opérations</li>
+                        </ul>
+                    </li>
+                    <li>2e workshop (4h) <ul>
+                            <li>Identification des opportunités d’amélioration</li>
+                        </ul>
+                    </li>
+                    <li>3e workshop (3h) <ul>
+                            <li>Stratégie d'amélioration éclair.</li>
+                        </ul>
+                    </li>
+                    <li><span>Formation IA avec Chat GPT4</span> pour vous donner de nouveaux réflexes de productivité.
+                    </li>
+                </ul>
+                <p class="undertitle balanced --m">Résultats garantis via 8 semaines de suivi (30 min/semaine)</p>
+                <p class="balanced undertitle --xl pricing">OFFRE SPECIALE à 3330 euros jusqu’au 15 novembre</p>
+                <p class="balanced undertitle --m">3 places
+                    disponibles</p>
             </div>
-            <div class="wrkshp">
-                <p>3e workshop (3h)</p>
-                <p>Nous mettons en place d’une <b>stratégie d'amélioration Quick-win</b> adaptée à vos priorités afin de
-                    mettre
-                    en place un plan d'action simple et personnalisé.</p>
-            </div>
-            <p>Nous terminons le 3e workshop par 1h de <b>formation à Chat GPT4</b> pour vous aider à implémenter
-                rapidement
-                vos quick wins.</p>
         </div>
+        <ul> En bonus:
+            <li>La Toolbox du Lean Management pour créér un mindset d’amélioration continue.</li>
+            <li>La méthode de suivi client et de gestion d’équipe qui va accélérer vos ventes et faciliter votre suivi
+                administratif.</li>
+            <li>Des template pour supporter l’évolution de votre entreprise et celle de vos employés (procédures,
+                processus, plan de formation + outil Better Process Flow…).</li>
+        </ul>
+        <h3>Contactez-moi par message dès aujourd'hui pour faire décoller vos
+            ventes.</h3>
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow_down_white.png" alt="Logo BPFlow"
+            style="display:block;margin:0 auto; padding-bottom:3rem;">
     </div>
 </section>
-<section class="form">
+<section class="contact">
     <div class="wrapper">
-        <h2>formulaire</h2>
+        <?php echo do_shortcode('[contact-form-7 id="84572f7" title="Contact form 1"]'); ?>
     </div>
 </section>
 

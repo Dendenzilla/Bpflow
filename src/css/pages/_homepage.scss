@@ -66,7 +66,7 @@
 .video {
     display: flex;
     justify-content: center;
-    padding-top: 7rem;
+    padding: 7rem 1rem 0;
     align-items: center;
     & iframe {
         width: 700px;
@@ -131,16 +131,6 @@
         width: fit-content;
         margin: 0 auto;
         list-style: none;
-        & li {
-            font-size: 1.5rem;
-            &::before {
-                content: attr(data-icon);
-                /* Make slightly larger than the li font-size
-  but smaller than the li gap */
-                font-size: 1.25em;
-                padding-right: 0.5rem;
-            }
-        }
     }
     &__incentive {
         & p {
@@ -190,7 +180,7 @@
             hsl(var(--pinkHSL) / 0%)
         );
     &__block {
-        padding: 4rem 0 2rem 0;
+        padding: 4rem 1rem 2rem;
         & blockquote {
             color: $smooth-white;
             font-weight: bold;
@@ -384,6 +374,150 @@
         &.visible div::before {
             left: -1rem;
             opacity: 1;
+        }
+    }
+}
+
+//==================================================
+// CONTACT SECTION
+//==================================================
+.contact {
+    margin-bottom: 6rem;
+}
+form {
+    position: relative;
+    // & .submit-plane {
+    //     content: "";
+    //     position: absolute;
+    //     bottom: 0;
+    //     left: 57%;
+    //     width: 5rem;
+    //     height: 5rem;
+    //     background-image: url("../img/sammy-line-paper-plane.svg");
+    //     background-size: contain;
+    //     background-position: center top;
+    //     background-repeat: no-repeat;
+    //     transform: scaleX(-1);
+    //     z-index: 9999;
+    //     // @include md {
+    //     //     bottom: -7%;
+    //     //     left: 45%;
+    //     // }
+    // }
+}
+.form-container {
+    width: calc(100% - (var(--main-width) / 4));
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    padding-top: 4rem;
+    margin: 6rem auto 2rem;
+    box-shadow: 0.3px 0.3px 2.4px rgba(0, 0, 0, 0.005),
+        0.7px 0.8px 5.8px rgba(0, 0, 0, 0.007),
+        1.3px 1.5px 10.9px rgba(0, 0, 0, 0.008),
+        2.2px 2.7px 19.4px rgba(0, 0, 0, 0.01),
+        4.2px 5px 36.3px rgba(0, 0, 0, 0.013),
+        10px 12px 87px rgba(0, 0, 0, 0.02);
+    // @include md {
+    //     padding: 0 1rem;
+    //     padding-top: 4rem;
+    //     width: 100%;
+    // }
+    & h2 {
+        position: absolute;
+        top: -1.5rem;
+        margin: 0;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        background-color: var(--main-color-strong);
+        color: white;
+        padding: 0.25rem 1rem;
+        // @include sm {
+        //     width: max-content;
+        // }
+    }
+    & label {
+        color: $smoother-grey;
+    }
+    & textarea {
+        resize: none;
+        height: 5rem;
+    }
+    & > div {
+        width: 50%;
+        // @include sm {
+        //     width: 100%;
+        // }
+    }
+    & > p {
+        width: 100%;
+    }
+    &__img {
+        max-width: 50%;
+        background-image: url("../img/contact.gif");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        // @include sm {
+        //     display: none;
+        // }
+    }
+}
+// ANIMATIONS KEYFRAMES
+// ANIMATIONS KEYFRAMES
+// ANIMATIONS KEYFRAMES
+@keyframes baseline {
+    0% {
+        transform: translateY(140%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes fadeinanim {
+    0% {
+        opacity: 0;
+    }
+    99.9% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .svg-hidden {
+        display: none;
+    }
+    .quote {
+        &__block {
+            & blockquote {
+                padding: 2rem 0 1.5rem 0;
+            }
+        }
+    }
+    .form-container {
+        flex-direction: column;
+        & > div {
+            width: 100%;
+        }
+        &__img {
+            display: none;
+        }
+    }
+    .path {
+        &__steps {
+            flex-direction: column;
+            & img {
+                transform: rotate(90deg);
+            }
+        }
+        & .cta {
+            & .brand-button {
+                font-size: 1rem;
+            }
         }
     }
 }

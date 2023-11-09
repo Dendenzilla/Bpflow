@@ -5,6 +5,7 @@
     top: 0;
     z-index: 9999999999;
     height: 90px;
+    background-color: $smooth-white;
     & > div {
         display: flex;
         justify-content: space-between;
@@ -51,4 +52,311 @@
             padding: 0 1rem;
         }
     }
+}
+
+// BURGER
+
+.burger {
+    display: none !important;
+    font-size: 1em;
+    cursor: pointer;
+    padding: 2em 1em;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.burger > div {
+    width: 3em;
+    height: 0.3em;
+    border-radius: 1em;
+    background: #eeedec;
+}
+
+.burger > div::before,
+.burger > div::after {
+    transition: font-size 0s;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 3em;
+    height: 0.3em;
+    background: #eeedec;
+    border-radius: 1em;
+}
+
+.burger > div::before {
+    margin-top: -1.5em;
+}
+
+.burger > div::after {
+    margin-top: 0.5em;
+}
+
+.burger2 > div {
+    transition: background 0.4s, font-size 0s;
+}
+
+.burger2 > div::before,
+.burger2 > div::after {
+    transition: font-size 0s;
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+}
+
+.burger2.toggled > div::before {
+    -webkit-animation: burg2top 0.4s linear forwards;
+    animation: burg2top 0.4s linear forwards;
+}
+
+.burger2.toggled > div {
+    background: transparent;
+}
+
+.burger2.toggled > div::after {
+    -webkit-animation: burg2bottom 0.4s linear forwards;
+    animation: burg2bottom 0.4s linear forwards;
+}
+
+.burger2.unToggled > div::before {
+    -webkit-animation: burg2topReset 0.4s linear forwards;
+    animation: burg2topReset 0.4s linear forwards;
+}
+
+.burger2.unToggled > div {
+    background: #eeedec;
+}
+
+.burger2.unToggled > div::after {
+    -webkit-animation: burg2bottomReset 0.4s linear forwards;
+    animation: burg2bottomReset 0.4s linear forwards;
+}
+
+@-webkit-keyframes burg2top {
+    20% {
+        margin-top: 0em;
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    60% {
+        margin-top: 0em;
+        -webkit-transform: rotate(55deg);
+        transform: rotate(55deg);
+    }
+
+    100% {
+        margin-top: 0em;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes burg2top {
+    20% {
+        margin-top: 0em;
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    60% {
+        margin-top: 0em;
+        -webkit-transform: rotate(55deg);
+        transform: rotate(55deg);
+    }
+
+    100% {
+        margin-top: 0em;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+}
+
+@-webkit-keyframes burg2bottom {
+    20% {
+        margin-top: 0em;
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    60% {
+        margin-top: 0em;
+        -webkit-transform: rotate(-55deg);
+        transform: rotate(-55deg);
+    }
+
+    100% {
+        margin-top: 0em;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+}
+
+@keyframes burg2bottom {
+    20% {
+        margin-top: 0em;
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    60% {
+        margin-top: 0em;
+        -webkit-transform: rotate(-55deg);
+        transform: rotate(-55deg);
+    }
+
+    100% {
+        margin-top: 0em;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+}
+
+@-webkit-keyframes burg2topReset {
+    0% {
+        margin-top: 0em;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    20% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    60% {
+        margin-top: 0.5em;
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        margin-top: 0.7em;
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes burg2topReset {
+    0% {
+        margin-top: 0em;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    20% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    60% {
+        margin-top: 0.5em;
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        margin-top: 0.7em;
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+@-webkit-keyframes burg2bottomReset {
+    0% {
+        margin-top: 0em;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+
+    20% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    60% {
+        margin-top: -0.5em;
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        margin-top: -0.7em;
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes burg2bottomReset {
+    0% {
+        margin-top: 0em;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+
+    20% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    60% {
+        margin-top: -0.5em;
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        margin-top: -0.7em;
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+// RESPONSIVE
+@media only screen and (max-width: 800px) {
+    .header {
+        background-color: $smooth-white;
+    }
+    .burger {
+        display: block !important;
+        top: 12px;
+    }
+    .header nav a {
+        display: none;
+    }
+    .header > div {
+        justify-content: center;
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .header.active {
+        height: 100vh;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+    }
+
+    .header.active nav {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+
+    .header.active nav a {
+        display: block;
+        color: $smooth-black;
+    }
+}
+html.fixed-position,
+body.fixed-position {
+    overflow: hidden;
+    margin: 0;
+    touch-action: none;
+    -ms-touch-action: none;
+    /* position: fixed; we get rid of this line which resets the flow of the page */
+    /* height: 100%; we change 100% to 100vh */
+    height: 100vh;
 }

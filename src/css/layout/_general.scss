@@ -21,6 +21,7 @@ h2 {
     font-size: clamp(1rem, 0.6rem + 3.3333vw, 4.5rem);
     line-height: 0.95;
     font-weight: 900;
+    transform: translateY(35px);
     font-family: "Raleway", sans-serif;
     text-wrap: balance;
     opacity: 0;
@@ -38,11 +39,8 @@ h2 {
         color: transparent;
     }
     &.tiny-title {
-        font-size: clamp(1rem, 0.6rem + 3.3333vw, 3rem);
+        font-size: clamp(1rem, 0.9rem + 3.3333vw, 3rem);
         font-weight: 600;
-        & span {
-            color: $brand-color-2;
-        }
     }
 }
 h3 {
@@ -61,6 +59,19 @@ p {
 li {
     font-family: "Montserrat", sans-serif;
     margin-top: 1.5rem;
+}
+ul {
+    list-style: none;
+    & li {
+        font-size: 1.2rem;
+        &::before {
+            content: attr(data-icon);
+            /* Make slightly larger than the li font-size
+but smaller than the li gap */
+            font-size: 1.25em;
+            padding-right: 0.5rem;
+        }
+    }
 }
 a {
     color: $smooth-black;
@@ -118,6 +129,9 @@ section {
 .emoji {
     font-size: 3rem;
 }
+.grecaptcha-badge {
+    visibility: hidden !important;
+}
 // FORMS
 // FORMS
 // FORMS
@@ -153,7 +167,7 @@ form {
         border: none;
         width: 100%;
         background-color: transparent;
-        margin: 0rem auto 1.5rem auto;
+        margin: 0rem auto 0.5rem auto;
     }
     & input:focus,
     textarea:focus {
@@ -166,7 +180,7 @@ form {
         text-align: center;
         display: grid;
         font-size: 1.5rem;
-        color: $smooth-black;
+        color: var(--smooth-black);
     }
     & input.wpcf7-submit {
         display: block;
@@ -178,11 +192,28 @@ form {
     & h3 {
         font-size: 1.3rem !important;
         font-weight: normal;
-        color: $smooth-black;
+        color: var(--text-color);
     }
     & a {
+        color: var(--main-color-strong) !important;
         font-weight: bold;
     }
+}
+// FORM INVALID NOTIFICATIONS
+.wpcf7-response-output {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+textarea ~ .wpcf7-not-valid-tip {
+    top: 7rem;
+}
+.wpcf7-not-valid-tip {
+    position: absolute;
+    z-index: -1;
+    font-size: 0.8rem !important;
+    top: 3.5rem;
+    left: 0;
 }
 // FORM INVALID NOTIFICATIONS
 .wpcf7-response-output {
@@ -355,3 +386,10 @@ $altColor: #6eb396;
 // FIN BUTTON
 // FIN BUTTON
 // FIN BUTTON
+@media only screen and (max-width: 800px) {
+    section {
+        & + section {
+            margin-top: 3rem !important;
+        }
+    }
+}
