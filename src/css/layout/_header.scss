@@ -70,7 +70,7 @@
     width: 3em;
     height: 0.3em;
     border-radius: 1em;
-    background: #eeedec;
+    background: $smooth-grey;
 }
 
 .burger > div::before,
@@ -81,7 +81,7 @@
     position: absolute;
     width: 3em;
     height: 0.3em;
-    background: #eeedec;
+    background: $smooth-grey;
     border-radius: 1em;
 }
 
@@ -124,7 +124,7 @@
 }
 
 .burger2.unToggled > div {
-    background: #eeedec;
+    background: $smooth-grey;
 }
 
 .burger2.unToggled > div::after {

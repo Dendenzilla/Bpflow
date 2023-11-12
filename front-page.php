@@ -4,7 +4,6 @@ Template Name: Front page
 */
 get_header(); ?>
 <section class="hero">
-
     <div class="wrapper">
         <h1>Votre entreprise a le nez dans le guidon?</h1>
         <h2>Gagnez du temps en organisant vos processus.</h2>
@@ -28,21 +27,8 @@ get_header(); ?>
 <section class="path">
     <div class="wrapper">
         <div class="path__incentive">
-            <p>Toute entreprise en croissance voit ses processus se complexifier.<img
-                    src="<?php echo get_stylesheet_directory_uri(); ?>/img/complexity.png" alt="Icon complexity"></p>
-            <p>N’attendez pas que la situation devienne <span class="text-svg"><b>critique</b> <svg
-                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 117 7" fill="none" preserveAspectRatio="none"
-                        class="svg-underline red">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M1 2l4.935 1.763c1.261.45 2.669.133 3.615-.813v0a3.464 3.464 0 014.9 0l.8.8a4.596 4.596 0 006.5 0v0a4.596 4.596 0 016.5 0l.75.75a3.536 3.536 0 005 0v0a3.536 3.536 0 015 0v0a3.536 3.536 0 005 0v0a3.536 3.536 0 015 0v0a3.536 3.536 0 005 0v0a3.536 3.536 0 015 0v0a3.536 3.536 0 005 0v0a3.536 3.536 0 015 0v0a3.536 3.536 0 005 0v0a3.536 3.536 0 015 0v0a3.536 3.536 0 005 0l.285-.285a3.938 3.938 0 014.872-.555l1.988 1.243A6.885 6.885 0 0098 5.157l2.454-1.291a11.712 11.712 0 017.49-1.17l4.555.804">
-                        </path>
-                    </svg></span> pour vous faire accompagner</p>
-            <p>Notre approche est <span class="text-svg"><b>simple</b> <svg xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 42 5" fill="none" preserveAspectRatio="none" class="svg-underline orange">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M1 3.50019C8.5 5.00012 16.5 2.50026 29 2.00019C41.5 1.50012 40 3.50019 40 3.50019">
-                        </path>
-                    </svg></span>, les résultats sont rapides et rentables grâce à nos outils innovants.</p>
+            <p>Toute entreprise en croissance voit ses processus se complexifier.</p>
+            <p>N’attendez pas que la situation devienne <b>critique</b> pour vous faire accompagner</p>
         </div>
         <h3><span class="text-fancy-bg-gradient">BP Flow</span> <span class="text-svg">c'est 3,2 M€
                 d’économies <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -27 259 52" fill="none"
@@ -51,8 +37,7 @@ get_header(); ?>
                         d="M 0 1 c 0 0 16 5 76 1 c 27 -2 44 -5 44 -18 c 0 -11 -8 -15 -36 -12 c -32 3 -35 16 -31 24 c 6 14 34 9 51 8 c 25 -2 26 -4 53 -5 c 28 -1 37 -1 76 3">
                     </path>
                 </svg></span> identifiées dans des grands
-            groupes.<br>Maintenant, nous accompagnons les
-            PMEs.</h3>
+            groupes.</h3>
         <ul>
             <li data-icon="📈">Devenez <b>scandaleusement efficaces</b>.</li>
             <li data-icon="😊"><b>Réduisez le stress</b> qui pèse sur vos équipes.</li>
@@ -62,10 +47,7 @@ get_header(); ?>
 </section>
 <section class="quote">
     <div class="quote__block">
-        <blockquote>Aucune entreprise ne devrait souffrir d’un manque d’organisation.<br>
-            La méthodologie <i>Lean Six Sigma</i> n’est pas réservée qu’aux grosses boites.
-
-        </blockquote>
+        <blockquote>Aucune entreprise ne devrait souffrir d’un manque d’organisation.</blockquote>
         <p>— Cédric Marien - CEO @ BP Flow <a
                 href="https://www.linkedin.com/in/bpflow-cedricmarien/?originalSubdomain=be" target="_blank"><img
                     src="<?php echo get_stylesheet_directory_uri(); ?>/img/linkedin-fill.png"
@@ -89,7 +71,7 @@ get_header(); ?>
     </div>
     <div class="cta">
         <p>Simplifiez la vie de vos clients/collaborateurs avec des processus simples.</p>
-        <a href="<?php echo get_page_link(9) ?>" class="brand-button">Découvrez notre Offre pour les PMEs B2B</a>
+        <a href="<?php echo get_page_link(9) ?>" class="brand-button">Découvrez notre Offre pour les PMEs</a>
     </div>
     </div>
 </section>
