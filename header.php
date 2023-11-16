@@ -51,7 +51,8 @@
                         alt="Logo BPFlow"></a>
             </div>
             <nav>
-                <a href="<?php echo get_page_link(9) ?>" class="text-fancy-bg-gradient">Dépassez vos attentes</a>
+                <a href="<?php echo home_url(); ?>" class="text-fancy-bg-gradient">BP Flow</a>
+                <a href="<?php echo get_page_link(9) ?>" class="text-fancy-bg-gradient">Service</a>
             </nav>
             <div class="burger burger2 unToggled">
                 <div></div>

@@ -22,13 +22,12 @@ get_header(); ?>
             <p>Vous aimeriez une meilleure maitrise de votre cycle de vente?</p>
         </div>
         <ul>
-            <li data-icon="📈"><b>Minimisez</b> vos risques d’erreurs opérationnelles</li>
-            <li data-icon="😊">Maximisez votre ROI en éliminant vos pertes</li>
-            <li data-icon="💯">Boostez votre équipe avec des processus efficaces</li>
+            <li data-icon="📉"><b>Minimisez</b> vos risques d’erreurs opérationnelles</li>
+            <li data-icon="💎"><b>Maximisez</b> votre ROI en éliminant vos pertes</li>
+            <li data-icon="🚀"><b>Boostez</b> votre équipe avec des processus efficaces</li>
         </ul>
-        <p class="balanced">Nous vous fournissons une stratégie clé en main + accompagnement de 8 semaines pour
-            développer votre
-            cycle de ventes.</p>
+        <p class="balanced">Une stratégie clé en main et un accompagnement de 8 semaines d'accompagnement pour booster
+            vos ventes.</p>
         <p>En plus, nous vous familarisons à l’IA Chat GPT pour changer vos réflexes et économiser un max de temps.
         </p>
     </div>
@@ -77,20 +76,21 @@ get_header(); ?>
                     </li>
                 </ul>
                 <p class="undertitle balanced --m">Résultats garantis via 8 semaines de suivi (30 min/semaine)</p>
-                <p class="balanced undertitle --xl pricing">OFFRE SPECIALE à 3330 euros jusqu’au 15 novembre</p>
-                <p class="balanced undertitle --m">3 places
-                    disponibles</p>
+
             </div>
         </div>
-        <ul> En bonus:
-            <li>La Toolbox du Lean Management pour créér un mindset d’amélioration continue.</li>
-            <li>La méthode de suivi client et de gestion d’équipe qui va accélérer vos ventes et faciliter votre suivi
-                administratif.</li>
-            <li>Des template pour supporter l’évolution de votre entreprise et celle de vos employés (procédures,
-                processus, plan de formation + outil Better Process Flow…).</li>
-        </ul>
-        <h3>Contactez-moi par message dès aujourd'hui pour faire décoller vos
-            ventes.</h3>
+        <div class="offer__cta__bonus">
+            <h3>En bonus:</h3>
+            <ul>
+                <li>La <b>Toolbox du Lean Management</b> pour créér un mindset d’amélioration continue.</li>
+                <li>La méthode de suivi client et de gestion d’équipe qui va accélérer vos ventes et faciliter votre
+                    suivi
+                    administratif.</li>
+                <li>Des template pour supporter l’évolution de votre entreprise et celle de vos employés (procédures,
+                    processus, plan de formation + outil Better Process Flow…).</li>
+            </ul>
+        </div>
+        <h3>Contactez-nous dès aujourd'hui pour faire décoller vos ventes.</h3>
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/arrow_down_white.png" alt="Logo BPFlow"
             style="display:block;margin:0 auto; padding-bottom:3rem;">
     </div>

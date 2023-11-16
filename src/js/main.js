@@ -159,68 +159,12 @@ $(".form-container span").each(function (index) {
     $(this).append('<div class="border"></div>');
 });
 
-// FORM SUBMIT PLANE TRANSLATE
-//converts viewport units to pixels (like "50vw" or "20vh" into pixels)
-function toPX(value) {
-    return (
-        (parseFloat(value) / 100) *
-        (/vh/gi.test(value) ? window.innerHeight : window.innerWidth)
-    );
-}
-var wpcf7Elm = document.querySelector(".wpcf7");
-wpcf7Elm.addEventListener(
-    "wpcf7mailsent",
-    function (event) {
-        gsap.timeline()
-            .fromTo(
-                ".submit-plane",
-                {
-                    x: 0,
-                },
-                {
-                    x: -20,
-                    ease: "power1.inOut",
-                    duration: 1,
-                }
-            )
-            .fromTo(
-                ".submit-plane",
-                {
-                    x: -20,
-                    scaleX: -1,
-                    scaleY: 1,
-                },
-                {
-                    x: toPX("60vw"),
-                    scaleX: -1,
-                    scaleY: 1,
-                    ease: "power1.out",
-                    duration: 1,
-                }
-            )
-            .fromTo(
-                ".submit-plane",
-                {
-                    rotation: 0,
-                    y: 0,
-                },
-                {
-                    y: -150,
-                    rotation: -60,
-                    ease: "power2.in",
-                    duration: 0.8,
-                },
-                1
-            );
-    },
-    false
-);
-
 // BURGER ANIM
 // BURGER ANIM
 // BURGER ANIM
 $(".burger").addClass("unToggled"),
     $(".burger").click(function () {
+        console.log("burger pressed");
         $(".header").toggleClass("active"),
             $(this).toggleClass("toggled"),
             $(this).toggleClass("unToggled"),

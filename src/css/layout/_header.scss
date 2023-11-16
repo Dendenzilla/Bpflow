@@ -43,14 +43,6 @@
                 border-radius: 30px;
             }
         }
-        & nav a:nth-child(2)::before,
-        nav a:nth-child(2)::after {
-            content: "|";
-            width: 5px;
-            height: 100%;
-            color: $smooth-white;
-            padding: 0 1rem;
-        }
     }
 }
 
@@ -67,7 +59,7 @@
 }
 
 .burger > div {
-    width: 3em;
+    width: 2em;
     height: 0.3em;
     border-radius: 1em;
     background: $smooth-grey;
@@ -79,7 +71,7 @@
     content: "";
     display: block;
     position: absolute;
-    width: 3em;
+    width: 2em;
     height: 0.3em;
     background: $smooth-grey;
     border-radius: 1em;
@@ -348,6 +340,7 @@
     .header.active nav a {
         display: block;
         color: $smooth-black;
+        text-align: center;
     }
 }
 html.fixed-position,

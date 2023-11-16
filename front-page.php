@@ -19,7 +19,7 @@ get_header(); ?>
 </div>
 <!-- FIN WRAPPER HEADER + HERO -->
 <section class="video">
-    <iframe src="https://www.youtube.com/embed/fQUcef2Jxpw?si=ADSCe_uBiZ2e1cJo" title="YouTube video player"
+    <iframe src="https://www.youtube.com/embed/cyS0Lajmsbg?si=EyFL38VnHi97hQlM" title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen></iframe>
@@ -28,15 +28,10 @@ get_header(); ?>
     <div class="wrapper">
         <div class="path__incentive">
             <p>Toute entreprise en croissance voit ses processus se complexifier.</p>
-            <p>N’attendez pas que la situation devienne <b>critique</b> pour vous faire accompagner</p>
+            <p>N’attendez pas que la situation devienne <b>critique</b> pour vous faire accompagner.</p>
         </div>
-        <h3><span class="text-fancy-bg-gradient">BP Flow</span> <span class="text-svg">c'est 3,2 M€
-                d’économies <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -27 259 52" fill="none"
-                    preserveAspectRatio="none" class="svg-hidden">
-                    <path class="svgtodraw" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M 0 1 c 0 0 16 5 76 1 c 27 -2 44 -5 44 -18 c 0 -11 -8 -15 -36 -12 c -32 3 -35 16 -31 24 c 6 14 34 9 51 8 c 25 -2 26 -4 53 -5 c 28 -1 37 -1 76 3">
-                    </path>
-                </svg></span> identifiées dans des grands
+        <h3><span class="text-fancy-bg-gradient">BP Flow</span> c'est 3,2 M€
+            d’économies identifiées dans des grands
             groupes.</h3>
         <ul>
             <li data-icon="📈">Devenez <b>scandaleusement efficaces</b>.</li>
